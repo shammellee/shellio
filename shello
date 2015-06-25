@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
 
+[ -n "$(which pbpaste)" ] || echo 'could not find pbpaste'; exit 1
+
 function usage()
 {
   echo "usage ${0##*/} <file_path>"
