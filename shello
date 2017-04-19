@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-[ -n "$(which pbpaste)" ] || echo 'could not find pbpaste'; exit 1
+[ -n "$(which pbpaste)" ] || { echo 'could not find pbpaste'; exit 1; }
 
 function usage()
 {
